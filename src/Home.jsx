@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -7,65 +7,86 @@ export default function Home() {
                 React Projects
             </div>
             <div class="grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 gap-8">
-                <div class="bg-blue-600 hover:bg-blue-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Color Picker
-                    </div>
-                </div>
 
-                <div class="bg-green-600 hover:bg-green-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        To-Do App
+                <Link to={{ pathname: '/color-picker' }}>
+                    <div class="bg-blue-600 hover:bg-blue-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Color Picker
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-pink-600 hover:bg-pink-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        GitHub User Finder
+                <Link to={{ pathname: '/todo' }}>
+                    <div class="bg-green-600 hover:bg-green-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            To-Do App
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-purple-600 hover:bg-purple-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Flash Cards
+                <Link to={{ pathname: '/github-user-finder' }}>
+                    <div class="bg-pink-600 hover:bg-pink-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            GitHub User Finder
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-yellow-600 hover:bg-yellow-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Pomodoro Timer
+                <Link to={{ pathname: '/flash-cards' }}>
+                    <div class="bg-purple-600 hover:bg-purple-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Flash Cards
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-fuchsia-600 hover:bg-fuchsia-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Chat App
+                <Link to={{ pathname: '/pomodoro-timer' }}>
+                    <div class="bg-yellow-600 hover:bg-yellow-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Pomodoro Timer
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-blue-600 hover:bg-blue-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Charts
+                <Link to={{ pathname: '/chat' }}>
+                    <div class="bg-fuchsia-600 hover:bg-fuchsia-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Chat App
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-red-600 hover:bg-red-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Currency Converter
+                <Link to={{ pathname: '/charts' }}>
+                    <div class="bg-blue-600 hover:bg-blue-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Charts
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-amber-600 hover:bg-amber-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Quiz App
+                <Link to={{ pathname: '/currency-converter' }}>
+                    <div class="bg-red-600 hover:bg-red-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Currency Converter
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="bg-emerald-600 hover:bg-emerald-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
-                    <div class="text-3xl font-semibold text-center mt-[45px]">
-                        Expense Tracker
+                <Link to={{ pathname: '/quiz-app' }}>
+                    <div class="bg-amber-600 hover:bg-amber-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Quiz App
+                        </div>
                     </div>
-                </div>
+                </Link>
+
+                <Link to={{ pathname: '/expense-tracker' }}>
+                    <div class="bg-emerald-600 hover:bg-emerald-500 p-4 min-h-[160px] rounded-lg shadow-md text-white cursor-pointer hover:shadow-xl transition transform duration-300 ease-in-out hover:scale-105">
+                        <div class="text-3xl font-semibold text-center mt-[45px]">
+                            Expense Tracker
+                        </div>
+                    </div>
+                </Link>
 
             </div>
 
