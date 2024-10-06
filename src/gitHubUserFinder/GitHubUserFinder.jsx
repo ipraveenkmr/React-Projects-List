@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function GitHubUserFiner() {
+function GitHubUserFinder() {
     const [username, setUsername] = useState('');
     const [userData, setUserData] = useState(null);
     const [error, setError] = useState('');
@@ -68,4 +68,4 @@ function GitHubUserFiner() {
     );
 }
 
-export default GitHubUserFiner;
+export default GitHubUserFinder;

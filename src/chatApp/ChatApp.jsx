@@ -5,7 +5,7 @@ import { io } from 'socket.io-client';
 
 const socket = io('http://localhost:5000');
 
-const Chat = () => {
+const ChatApp = () => {
     const [queryParameters] = useSearchParams();
     const username = queryParameters.get("name");
     const [message, setMessage] = useState('');
@@ -59,4 +59,4 @@ const Chat = () => {
     );
 };
 
-export default Chat;
+export default ChatApp;
